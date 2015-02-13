@@ -20,4 +20,12 @@ public class DiamondTest {
 
         assertEquals("  *\n ***\n*****\n ***\n  *\n",diamond.drawDiamond(3));
     }
+
+    @Test
+    public void testDrawDiamondWithName() throws Exception {
+        Diamond diamond=new Diamond();
+
+        assertEquals("  *\n ***\nShuwen Li\n ***\n  *\n",diamond.drawDiamondWithName(3,"Shuwen Li"));
+
+    }
 }
