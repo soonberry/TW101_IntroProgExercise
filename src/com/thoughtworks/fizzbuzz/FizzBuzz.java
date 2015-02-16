@@ -5,7 +5,20 @@ package com.thoughtworks.fizzbuzz;
  */
 public class FizzBuzz {
 
-    public String FizzBuzz(int n){
+    public String fizz(int n){
+        if(n%3==0)
+            return "Fizz";
+        return "";
+    }
+
+    public String buzz(int n) {
+        if (n%5==0)
+            return "Buzz";
+        return "";
+    }
+
+
+    public String fizzBuzz(int n){
         String result="";
         for (int i = 1; i <=n; i++) {
             if(i%3==0) {
@@ -21,4 +34,6 @@ public class FizzBuzz {
         }
         return result;
     }
+
+
 }
