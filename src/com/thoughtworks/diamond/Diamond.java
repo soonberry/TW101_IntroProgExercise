@@ -30,7 +30,7 @@ public class Diamond {
 
     public String drawDiamond(int n) {
         String result="";
-        result=drawIsoTriangle(3)+drawTraTriangle(3);
+        result=drawIsoTriangle(n)+drawTraTriangle(n);
         return result;
     }
 
