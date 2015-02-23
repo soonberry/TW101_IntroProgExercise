@@ -9,16 +9,16 @@ import java.util.ListIterator;
  */
 public class PrimeFactors {
     public List<Integer> generate(int n) {
-        List<Integer> factors=new ArrayList<Integer>();
-        if(n<2)
+        List<Integer> factors = new ArrayList<Integer>();
+        if (n < 2)
             return null;
-        else{
+        else {
             for (int i = 2; i <= n; i++) {
-                while (n!=i){
-                    if(n%i!=0)
+                while (n != i) {
+                    if (n % i != 0)
                         break;
                     factors.add(Integer.valueOf(i));
-                    n=n/i;
+                    n = n / i;
                 }
             }
             factors.add(Integer.valueOf(n));
