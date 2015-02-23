@@ -10,14 +10,14 @@ public class FizzBuzzTest {
     public void testFizz() throws Exception {
         FizzBuzz fizzBuzz=new FizzBuzz();
 
-        assertEquals("Fizz",fizzBuzz.fizz(3));
+        assertEquals("Fizz",fizzBuzz.isFizzBuzz(3));
     }
 
     @Test
     public void testBuzz() throws Exception {
         FizzBuzz fizzBuzz=new FizzBuzz();
 
-        assertEquals("Buzz",fizzBuzz.buzz(5));
+        assertEquals("Buzz",fizzBuzz.isFizzBuzz(5));
 
     }
 

@@ -5,35 +5,29 @@ package com.thoughtworks.fizzbuzz;
  */
 public class FizzBuzz {
 
-    public String fizz(int n){
-        if(n%3==0)
-            return "Fizz";
-        return "";
-    }
+    public String isFizzBuzz(int n) {
+        String result="";
+        if (n % 3 == 0) {
+            result += "Fizz";
+            if (n % 5 == 0)
+                result += "Buzz";
+        }
+        else if(n%5==0)
+            result+="Buzz";
+        else
+            result+=n;
 
-    public String buzz(int n) {
-        if (n%5==0)
-            return "Buzz";
-        return "";
+        return result;
     }
 
 
     public String fizzBuzz(int n){
         String result="";
         for (int i = 1; i <=n; i++) {
-            if(i%3==0) {
-                result += "Fizz";
-                if (i % 5 == 0)
-                    result += "Buzz";
-            }
-            else if(i%5==0)
-                result+="Buzz";
-            else
-                result+=i;
+            result+=isFizzBuzz(i);
             result+="\n";
         }
         return result;
     }
-
 
 }
